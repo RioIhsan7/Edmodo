@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edmodo.png" translatesAutoresizingMaskIntoConstraints="NO" id="dvT-69-spe">
+                                <rect key="frame" x="0.0" y="205" width="375" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="38x-Eh-JWg"/>
+                                    <constraint firstAttribute="height" constant="195" id="iV1-ls-Fjd"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7H3-uH-RIQ">
+                                <rect key="frame" x="90" y="408" width="195" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="d8v-8q-azq"/>
+                                    <constraint firstAttribute="height" constant="2" id="fCL-Th-PyE"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="7H3-uH-RIQ" secondAttribute="trailing" constant="74" id="7eD-30-kLZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7H3-uH-RIQ" secondAttribute="bottom" constant="257" id="Dg8-Ec-K8O"/>
+                            <constraint firstItem="7H3-uH-RIQ" firstAttribute="top" secondItem="dvT-69-spe" secondAttribute="bottom" constant="8" id="Dqb-Vy-Twt"/>
+                            <constraint firstItem="dvT-69-spe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hT0-YT-J8f"/>
+                            <constraint firstItem="dvT-69-spe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p21-ac-l7O"/>
+                            <constraint firstItem="dvT-69-spe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="185" id="tQi-Bp-LlQ"/>
+                            <constraint firstItem="7H3-uH-RIQ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="74" id="tjp-tO-Z6w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="edmodo.png" width="148" height="160"/>
+    </resources>
+</document>
